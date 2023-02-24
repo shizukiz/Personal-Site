@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+body, html {
+    font-family: 'Fira Code', monospace;
+}
+
+
+.leftside {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    color: #fff;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+.leftside::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+
+.leftside .main {
+    margin-top: 10rem;
+}
+
+.leftside .main h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.leftside .main p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+
+}
+
+.leftside .main p span {
+    color: #868686;
+}
+
+
+.leftside .links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 15rem;
+}
+
+.leftside .links a {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-inline: 17.5px;
+    border-radius: 10px;
+    margin: 0 1rem;
+    color: #ffffff;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.leftside .links a:hover {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-inline: 22.5px;
+    transition: 0.3s;
+}
+
+.leftside .links i {
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+
+.leftside .discordembed {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    padding: 1rem;
+    color: #fff;
+    transition: 0.3s;
+    position: relative;
+}
+
+.leftside .discordembed:hover {
+    padding: 0rem;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+
+.leftside .discordembed #bannerpicture {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+
+}
+
+.leftside .discordembed #bannerpicture:hover {
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.leftside .discordembed #profilepicture {
+    position: absolute;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: 0.3s;
+    height: 100px;
+
+}
+
+
+.leftside .discordtitle {
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+
+.leftside .discordembed p {
+    position: absolute;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 125px;
+}
+
+.leftside .discordembed #profilepicture:hover {
+    transform: scale(1.1);
+    border-radius: 30%;
+    transition: 0.3s;
+}
+
+
+
+
+/* --------------------------------------------------------------------------- */
+
+
+
+.rightside {
+    background: linear-gradient(45deg, #ffffff, #000000);
+}
+
+
+.rightside .aboutme {
+    margin-left: 3rem;
+    width: 80%;
+    color: #000911;
+} 
+
+
+.rightside .aboutme h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+
+.rightside .aboutme a, .rightside .aboutme p {
+    font-weight: 500;
+    color:  #ffffff;
+    transition: 0.3s;
+}
+
+
+
+
+.rightside .taglist ul {
+    margin-left: -2.5rem;
+    position: relative;
+    list-style: none;
+    margin-top: 5rem;
+}
+
+.rightside .taglist li {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.671);
+    padding: 10px;
+    margin-inline: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    color: #212529;
+    transition: 0.3s;
+}
+
+
+.rightside .taglist li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+
+.rightside .projects {
+    margin-left: 3rem;
+    width: 80%;
+    color: #ffffff;
+} 
+
+
+.rightside .projects h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+
+.rightside .projects a, .rightside .projects p {
+    font-weight: 500;
+    color:  #ffffff;
+    transition: 0.3s;
+}
+
+
+.rightside .projectlist ul {
+    margin-left: -2.5rem;
+    position: relative;
+    list-style: none;
+    margin-top: 2.5rem;
+}
+
+.rightside .projectlist li {
+    width: 60%;
+    background-color: rgba(113, 113, 113, 0.25);
+    padding: 10px;
+    margin-inline: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: 0.3s;
+    font-size: 17.5px;
+}
+
+
+.rightside .projectlist li:hover {
+    width: 55%;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+
+.rightside .footerpage {
+    margin-left: 3rem;
+    width: 80%;
+    color: #0d559c;
+} 
+
+
+.rightside .footerpage h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+
+.rightside .footerpage a, .rightside .footerpage p {
+    font-weight: 500;
+    color:  #178bff;
+    transition: 0.3s;
+}
+
+
+.rightside .footerpage .credits {
+    margin-top: 2.5rem;
+}
+
+.rightside .footerpage .contactmetext {
+    margin-top: 3rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
